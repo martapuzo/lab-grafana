@@ -11,8 +11,8 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=admin
       - GF_INSTALL_PLUGINS=marcusolsson-csv-datasource,agenty-flowcharting-panel,yesoreyeram-boomtable-panel
     restart: unless-stopped
-    # volumes:
-    #   - ./grafana-data:/var/lib/grafana
+    volumes:
+       - ./grafana-data:/var/lib/grafana
     depends_on:
       - prometheus
 
