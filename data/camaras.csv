@@ -1,0 +1,26 @@
+label,value
+T1,-2.4
+H1,78
+D1,Cerrada
+C1,ACTIVO
+A1,INACTIVA
+
+T2,-1.7
+H2,83
+D2,Abierta
+C2,ACTIVO
+A2,ACTIVA 🔴
+
+T3,-3.1
+H3,75
+D3,Cerrada
+C3,INACTIVO
+A3,INACTIVA
+
+Check1,OK
+Check2,ALARMA
+NodoDecision,Error
+
+Soporte,EN CURSO
+Auditoría,PENDIENTE
+ValidaciónFinal,ESPERANDO

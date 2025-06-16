@@ -1,0 +1,6 @@
+pedido_id,estado,fecha,categoria
+1001,Recepcionado,2024-06-01,Vacuno
+1002,Procesado,2024-06-02,Porcino
+1003,Calidad,2024-06-02,Ovino
+1004,Empaquetado,2024-06-03,Vacuno
+1005,Enviado,2024-06-03,Ovino

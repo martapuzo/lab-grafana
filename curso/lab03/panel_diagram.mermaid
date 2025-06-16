@@ -1,0 +1,32 @@
+graph LR
+  subgraph Cámara_1 [Cámara 1 - Vacuno]
+    T1[🌡️ Temp: ${temp_c1}]
+    H1[💧 Humedad: ${hum_c1}]
+    D1[🚪 Puerta: ${door_c1}]
+    C1[⚙️ Compresor: ${comp_c1}]
+    A1[🚨 Alarma: ${alarm_c1}]
+  end
+
+  subgraph Cámara_2 [Cámara 2 - Porcino]
+    T2[🌡️ Temp: ${temp_c2}]
+    H2[💧 Humedad: ${hum_c2}]
+    D2[🚪 Puerta: ${door_c2}]
+    C2[⚙️ Compresor: ${comp_c2}]
+    A2[🚨 Alarma: ${alarm_c2}]
+  end
+
+  subgraph Cámara_3 [Cámara 3 - Ovino]
+    T3[🌡️ Temp: ${temp_c3}]
+    H3[💧 Humedad: ${hum_c3}]
+    D3[🚪 Puerta: ${door_c3}]
+    C3[⚙️ Compresor: ${comp_c3}]
+    A3[🚨 Alarma: ${alarm_c3}]
+  end
+
+  style Cámara_1 fill:#d0f0c0,stroke:#27ae60,stroke-width:2px
+  style Cámara_2 fill:#f9ebea,stroke:#e74c3c,stroke-width:2px
+  style Cámara_3 fill:#e8f8f5,stroke:#1abc9c,stroke-width:2px
+
+  click Cámara_1 "d/camara-detail?var-camara=Camara_1" "Ver detalle"
+  click Cámara_2 "d/camara-detail?var-camara=Camara_2" "Ver detalle"
+  click Cámara_3 "d/camara-detail?var-camara=Camara_3" "Ver detalle"

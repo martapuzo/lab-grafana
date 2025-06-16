@@ -11,13 +11,17 @@ Se continúa sobre el panel creado en la fase anterior.
 1. Abre el panel Diagram creado anteriormente.
 2. Sustituye el contenido del campo **Diagram definition** por el siguiente diagrama:
 
+
 ```mermaid
 graph LR
-  A-series:::entrada --> B-series:::salida
+  Pedido:::entrada --> Procesado:::salida
 
-  classDef entrada fill=#001f3f,stroke=#fff,color=#fff;
-  classDef salida fill=#fff,stroke=#001f3f,color=#001f3f;
+  classDef entrada fill:#003366,stroke:#ffffff,color:#ffffff;
+  classDef salida fill:#ffffff,stroke:#003366,color:#003366;
+
 ```
+
+
 
 3. Comprueba que los nodos `A-series` y `B-series` tienen estilos visuales distintos:
 
