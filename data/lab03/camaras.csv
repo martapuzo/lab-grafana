@@ -1,0 +1,4 @@
+camara,temp,humedad,puerta,compresor,alarma
+Camara_1,-2.4,78,Cerrada,ACTIVO,INACTIVA
+Camara_2,-1.7,83,Abierta,ACTIVO,ACTIVA
+Camara_3,-3.1,75,Cerrada,INACTIVO,INACTIVA

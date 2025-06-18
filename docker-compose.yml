@@ -9,7 +9,7 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
-      - GF_INSTALL_PLUGINS=marcusolsson-csv-datasource,agenty-flowcharting-panel,yesoreyeram-boomtable-panel
+      - GF_INSTALL_PLUGINS=marcusolsson-csv-datasource,agenty-flowcharting-panel,yesoreyeram-boomtable-panel,grafana-simple-json-datasource
     restart: unless-stopped
     volumes:
        - ./grafana-data:/var/lib/grafana
@@ -47,3 +47,18 @@ services:
       - "8080:8080"
     labels:
       - "gh.codespaces.port-name=CSV Server"
+
+  api-node:
+    build:
+      context: ./api-node/
+      dockerfile: Dockerfile
+    container_name: api-node
+    ports:
+      - "4000:3000"
+    volumes:
+      - ./api-node:/app
+      - /app/node_modules  # esto evita que el volumen del host tape los node_modules
+
+    labels:
+      - "gh.codespaces.port-name=Api Node"
+    restart: unless-stopped
