@@ -48,9 +48,9 @@ router.get('/', (req, res) => {
       const timestamp = formatISO(current, { representation: 'complete' });
       const T = (Math.random() * -4 - 1).toFixed(1);
       const H = Math.floor(Math.random() * 10 + 80);
-      const D = Math.random() < 0.5 ? 'Cerrada' : 'Abierta';
+      const D = Math.random() < 0.5 ? '0' : '1';
       const C = 'ACTIVO';
-      const A = Math.random() < 0.1 ? 'ACTIVA' : 'INACTIVA';
+      const A = Math.random() < 0.1 ? '0' : '1';
 
       rows.push(`${camara},${timestamp},${T},${H},${D},${C},${A}`);
     }
